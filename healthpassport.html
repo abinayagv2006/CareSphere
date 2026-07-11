@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Health Passport</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">🪪 Digital Health Passport</h1>
+
+<form method="POST" action="/healthpassport" class="passport-box">
+
+    <input type="text"
+           name="name"
+           placeholder="Name"
+           required>
+
+    <input type="number"
+           name="age"
+           placeholder="Age"
+           required>
+
+    <input type="text"
+           name="blood_group"
+           placeholder="Blood Group"
+           required>
+
+    <input type="text"
+           name="blood_pressure"
+           placeholder="Blood Pressure"
+           required>
+
+    <input type="text"
+           name="sugar_level"
+           placeholder="Sugar Level"
+           required>
+
+    <input type="text"
+           name="emergency_contact"
+           placeholder="Emergency Contact"
+           required>
+
+    <button type="submit">
+        Generate Passport
+    </button>
+
+</form>
+<h2>Health Passports</h2>
+
+<div class="saved-list">
+{% for p in passports %}
+<div class="saved-card">
+
+    <h3>🪪 {{ p[1] }}</h3>
+
+    <p>🎂 Age: {{ p[2] }}</p>
+    <p>🩸 Blood Group: {{ p[3] }}</p>
+    <p>❤️ BP: {{ p[4] }}</p>
+    <p>🍬 Sugar: {{ p[5] }}</p>
+    <p>📞 Emergency Contact: {{ p[6] }}</p>
+    <a href="/download-passport/{{ p[0] }}" class="download-btn">
+    <button>📄 Download PDF</button>
+</a>
+</div>
+{% endfor %}
+</div>
+
+<!--script src="{{ url_for('static', filename='js/passport.js') }}"></script>
+
+</body>
+</html>

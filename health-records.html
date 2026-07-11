@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">Health Records</h1>
+
+<form method="POST" action="/health-records" class="health-box">
+
+    <input type="text"
+           name="patient_name"
+           placeholder="Patient Name"
+           required>
+
+    <input type="number"
+           name="weight"
+           placeholder="Weight (kg)"
+           required>
+
+    <input type="number"
+           name="height"
+           placeholder="Height (cm)"
+           required>
+
+    <input type="text"
+           name="blood_pressure"
+           placeholder="Blood Pressure"
+           required>
+
+    <input type="text"
+           name="sugar_level"
+           placeholder="Sugar Level"
+           required>
+
+    <button type="submit">
+        Save Record
+    </button>
+
+</form>
+
+<h2>Saved Records</h2>
+
+<div class="saved-list">
+{% for record in records %}
+<div class="saved-card">
+
+    <h3>👤 {{ record[1] }}</h3>
+
+    <p>⚖ Weight: {{ record[2] }} kg</p>
+    <p>📏 Height: {{ record[3] }} cm</p>
+    <p>❤️ BP: {{ record[4] }}</p>
+    <p>🩸 Sugar: {{ record[5] }}</p>
+
+</div>
+{% endfor %}
+</div>
+
+<!-- <script src="{{ url_for('static', filename='js/health.js') }}"></script> -->
+
+</body>
+</html>

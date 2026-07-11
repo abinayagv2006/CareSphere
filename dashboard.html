@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="welcome-card">
+    <h2>👋 Welcome, {{ user }}</h2>
+    <p>Glad to see you in CareSphere 💜</p>
+</div>
+<div class="welcome-box">
+
+    <h1>👋 Welcome to CareSphere</h1>
+
+    <p>
+        Your Health, Our Priority ❤️
+    </p>
+    <p class="quote">
+🌸 Health is the greatest gift, happiness is the greatest wealth.
+</p>
+
+
+</div>
+<div class="stats-container">
+
+    <div class="stat-card">
+        <h3>💊 Medicines</h3>
+        <p>{{ medicine_count }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>📋 Health Records</h3>
+        <p>{{ health_count }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>🚨 Emergency Contacts</h3>
+        <p>{{ emergency_count }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>📝 Feedbacks</h3>
+        <p>{{ feedback_count }}</p>
+    </div>
+
+</div>
+
+<div class="dashboard">
+
+    <div class="dash-card">
+        <a href="/medicine">
+<h2>💊 Medicine Reminder</h2>
+</a>
+    </div>
+
+    <div class="dash-card">
+        <a href="/appointment">
+    <h2>🏥 Appointment Booking</h2>
+</a>
+    </div>
+
+    <div class="dash-card">
+        <a href="/health-records">
+    <h2>📋 Health Records</h2>
+</a>
+    </div>
+
+    <div class="dash-card">
+        <a href="/emergency">
+    <h2>🚨 Emergency Contacts</h2>
+</a>
+    </div>
+
+    <div class="dash-card">
+        <a href="/emotional">
+            <h2>😊 Emotion Check-In</h2>
+        </a>
+    </div>
+
+    <div class="dash-card">
+        <a href="/games">
+            <h2>🎮 Wellness Games</h2>
+        </a>
+    </div>
+    <div class="dash-card">
+        <a href="/family">
+            <h2>💌 Family Connect Wall</h2>
+        </a>
+    </div>
+    <div class="dash-card">
+    <a href="/carescore">
+        <h2>📊 Care Score</h2>
+    </a>
+</div>
+<div class="dash-card">
+    <a href="/healthpassport">
+        <h2>🪪 Health Passport</h2>
+    </a>
+</div>
+<div class="dash-card">
+    <a href="/feedback">
+        <h2>📝 Feedback</h2>
+    </a>
+</div>
+
+</div>
+<h2 class="section-heading">
+📈 CareSphere Overview
+</h2>
+<div class="stats-container">
+
+    <div class="stat-box">
+        <h2>10+</h2>
+        <p>Features</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>3</h2>
+        <p>Wellness Games</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>24/7</h2>
+        <p>Support</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>Elder Friendly</p>
+    </div>
+
+</div>
+<a href="/logout" class="logout-btn">🚪 Logout</a>
+
+
+</body>
+</html>

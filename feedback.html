@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - CareSphere</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">📝 Feedback</h1>
+
+<form method="POST" action="/feedback" class="feedback-box">
+
+    <input type="text"
+           name="name"
+           placeholder="Enter Your Name"
+           required>
+
+    <textarea
+        name="feedback"
+        placeholder="Share your feedback"
+        required></textarea>
+
+    <h3>⭐ Rate CareSphere</h3>
+
+    <select name="rating" required>
+
+        <option value="">Select Rating</option>
+
+        <option value="⭐">1 Star</option>
+        <option value="⭐⭐">2 Stars</option>
+        <option value="⭐⭐⭐">3 Stars</option>
+        <option value="⭐⭐⭐⭐">4 Stars</option>
+        <option value="⭐⭐⭐⭐⭐">5 Stars</option>
+
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        Submit Feedback
+    </button>
+
+</form>
+<h2>User Feedbacks</h2>
+
+<div class="saved-list">
+{% for fb in feedbacks %}
+<div class="saved-card">
+
+    <h3>👤 {{ fb[1] }}</h3>
+
+    <p>{{ fb[3] }}</p>
+    <p>{{ fb[2] }}</p>
+
+</div>
+{% endfor %}
+</div>
+
+<!--script src="{{ url_for('static', filename='js/feedback.js') }}"></script>
+
+</body>
+</html>

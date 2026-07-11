@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Connect Wall</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">💌 Family Connect Wall</h1>
+
+<div class="family-box">
+
+    <input type="text"
+    id="member"
+    placeholder="Your Name">
+
+    <textarea
+    id="message"
+    placeholder="Write a message"></textarea>
+
+    <button onclick="addMessage()">
+        Post Message
+    </button>
+
+    <div id="wall"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/family.js') }}"></script>
+
+</body>
+</html>

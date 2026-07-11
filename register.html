@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - CareSphere</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+
+<div class="register-box">
+
+    <h1>Create Account</h1>
+
+    <form method="POST" action="/register">
+
+        <input type="text" placeholder="Full Name" name="name">
+
+        <input type="number" placeholder="Age" name="age">
+
+        <select name="gender">
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <input type="tel" placeholder="Phone Number" name="phone">
+
+        <input type="email" placeholder="Email" name="email">
+
+        <input type="password" placeholder="Password" name="password">
+
+        <input type="password" placeholder="Confirm Password" name="confirm_password">
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="/login">Login</a>
+    </p>
+
+</div>
+
+<!-- <script src="{{ url_for('static', filename='js/register.js') }}"></script> -->
+
+</body>
+</html>

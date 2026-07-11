@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wellness Games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">🎮 Wellness Games</h1>
+
+<div class="games-box">
+
+    <h2>🧠 Number Recall Game</h2>
+
+    <h3 id="numberBox">Click Start</h3>
+
+    <button onclick="startGame()">
+        Start Game
+    </button>
+
+    <input type="text"
+    id="memoryAnswer"
+    placeholder="Enter Number">
+
+    <button onclick="checkMemory()">
+        Check
+    </button>
+
+    <div id="memoryResult"></div>
+
+    <hr>
+
+    <h2>🎲 Guess The Number</h2>
+
+    <input type="number"
+    id="guess"
+    placeholder="Enter Number (1-10)">
+
+    <button onclick="checkGuess()">
+        Guess
+    </button>
+
+    <div id="guessResult"></div>
+
+    <hr>
+
+    <h2>🧩 Word Scramble</h2>
+
+    <h3>RTOCOD</h3>
+
+    <input type="text"
+    id="wordAnswer"
+    placeholder="Enter Correct Word">
+
+    <button onclick="checkWord()">
+        Check
+    </button>
+
+    <div id="wordResult"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/games.js') }}"></script>
+</body>
+</html>

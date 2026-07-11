@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareSphere</title>
+    <link rel="stylesheet" href="   {{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+    <h2>CareSphere</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/service">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/login">Login</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <img src="{{ url_for('static', filename='images/elders.webp') }}" alt="Elder Care">
+
+    <h1>Welcome to CareSphere</h1>
+
+    <p>
+        Your Complete Elder Care Companion
+    </p>
+
+    <p>
+        Empowering elderly people with better healthcare,
+        medicine management, emergency support,
+        and wellness tracking.
+    </p>
+
+    <button>Get Started</button>
+
+</section>
+
+<!-- About Preview -->
+
+<section class="about">
+
+    <h2>About CareSphere</h2>
+
+    <img src="{{ url_for('static', filename='./images/doctor.jpeg') }}" alt="Doctor">
+
+    <p>
+        CareSphere is a smart elder care management
+        system designed to help senior citizens manage
+        their healthcare activities safely and easily.
+    </p>
+    <p>
+        From medicine reminders to emergency contacts,
+        CareSphere provides a comprehensive solution
+        for better health and well-being.
+    </p>
+    <a href="/about">
+        <button>Read More</button>
+    </a>
+
+</section>
+
+<!-- Services -->
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/medicine.webp') }}">
+
+        <h3>Medicine Reminder</h3>
+
+        <p>
+            Never miss medicines on time.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/doctors.avif') }}">
+
+        <h3>Appointment Booking</h3>
+
+        <p>
+            Book doctor appointments easily.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/health.webp') }}">
+
+        <h3>Health Records</h3>
+
+        <p>
+            Store health information securely.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/emergency.webp') }}">
+
+        <h3>Emergency Contacts</h3>
+
+        <p>
+            Quick access during emergencies.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Extra Features -->
+
+<section class="extra">
+
+    <h2>Special Features</h2>
+
+    <ul>
+
+        <li>Emotion Check-In</li>
+
+        <li>Care Score Tracking</li>
+
+        <li>Digital Health Passport</li>
+
+        <li>Wellness Corner Games</li>
+
+    </ul>
+
+</section>
+
+<!-- Why Choose Us -->
+
+<section class="why">
+
+    <h2>Why Choose CareSphere?</h2>
+
+    <p>✔ Easy to Use</p>
+
+    <p>✔ Elder Friendly Design</p>
+
+    <p>✔ Secure Health Records</p>
+
+    <p>✔ Mental Wellness Support</p>
+
+    <p>✔ Emergency Ready</p>
+
+    <p>✔ Complete Healthcare Solution</p>
+
+</section>
+
+<!-- Health Tip -->
+
+<section class="tip">
+
+    <h2>Today's Health Tip</h2>
+
+    <img src="{{ url_for('static', filename='images/health.webp') }}">
+
+    <p>
+        Drink at least 8 glasses of water daily
+        to stay healthy and hydrated.
+    </p>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <p>
+        ★★★★★
+        CareSphere helps me remember my medicines every day.
+        - Ravi Kumar
+    </p>
+
+    <p>
+        ★★★★★
+        Very easy for senior citizens to use.
+        - Lakshmi Devi
+    </p>
+
+    <p>
+        ★★★★★
+        The emergency contact feature is very useful.
+        - Suresh Kumar
+    </p>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+    <h2>Our Impact</h2>
+
+    <h3>100+</h3>
+    <p>Registered Users</p>
+
+    <h3>500+</h3>
+    <p>Health Records</p>
+
+    <h3>200+</h3>
+    <p>Appointments Managed</p>
+
+    <h3>50+</h3>
+    <p>Emergency Contacts Added</p>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Ready to Take Better Care of Your Health?
+    </h2>
+    <button onclick="window.location.href='/register'">
+    Register Now
+</button>
+     
+</section>
+
+ <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <h3>💜 CareSphere</h3>
+
+            <p>
+                Caring for Seniors with Technology and Compassion.
+            </p>
+
+            <div class="footer-links">
+                <a href="/home">Home</a>
+                <a href="/about">About</a>
+                <a href="/services">Services</a>
+                <a href="/contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 CareSphere. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    
+    
+    
+
+
+
+</body>
+</html>

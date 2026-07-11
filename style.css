@@ -1,0 +1,1049 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8f9ff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navbar */
+
+nav{
+    background:purple;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero img{
+    width:500px;
+    max-width:100%;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:purple;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.hero button{
+    background:purple;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.hero button:hover{
+    background:#5e0a8a;
+}
+
+/* Common Section */
+
+section{
+    padding:80px 50px;
+}
+
+section h2{
+    text-align:center;
+    color:purple;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    background:white;
+}
+
+.about img{
+    width:350px;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+.about button{
+    margin-top:25px;
+    padding:12px 30px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+}
+
+/* Services */
+
+.services{
+    background:#f2f2ff;
+}
+
+.card{
+    background:white;
+    width:280px;
+    display:inline-block;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.card h3{
+    margin-top:15px;
+    color:purple;
+}
+
+.card p{
+    margin-top:10px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    transition:0.3s;
+}
+
+/* Extra Features */
+
+.extra{
+    background:white;
+}
+
+.extra ul{
+    max-width:500px;
+    margin:auto;
+}
+
+.extra li{
+    margin:20px;
+    font-size:20px;
+}
+
+/* Why Choose Us */
+
+.why{
+    background:#f2f2ff;
+    text-align:center;
+}
+
+.why p{
+    margin:15px;
+    font-size:20px;
+}
+
+/* Health Tip */
+
+.tip{
+    text-align:center;
+    background:white;
+}
+
+.tip img{
+    width:250px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.tip p{
+    font-size:20px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    background:#f2f2ff;
+    text-align:center;
+}
+
+.testimonials p{
+    background:white;
+    margin:25px auto;
+    padding:20px;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Statistics */
+
+.stats{
+    text-align:center;
+    background:white;
+}
+
+.stats h3{
+    font-size:40px;
+    color:purple;
+    margin-top:30px;
+}
+
+.stats p{
+    margin-bottom:20px;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    background:purple;
+    color:white;
+}
+
+.cta h2{
+    color:white;
+}
+
+.cta button{
+    padding:15px 35px;
+    background:white;
+    color:purple;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .card{
+        width:90%;
+    }
+}
+.login-box{
+    width:400px;
+    margin:100px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.login-box h1{
+    text-align:center;
+    color:purple;
+    margin-bottom:20px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.login-box p{
+    text-align:center;
+    margin-top:15px;
+}
+.dashboard{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.dash-card{
+    width:250px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+.dash-card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+.title{
+    text-align:center;
+    color:purple;
+    margin-top:30px;
+}
+
+.medicine-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.medicine-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.medicine-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+.medicine-box li{
+    margin-top:15px;
+    padding:10px;
+    background:#f2f2ff;
+    border-radius:8px;
+}
+.dash-card a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.appointment-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.appointment-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.appointment-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2ff;
+    border-radius:10px;
+}
+
+#result h3{
+    color:purple;
+    margin-bottom:10px;
+}
+.health-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.health-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.health-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#recordResult{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2ff;
+    border-radius:10px;
+}
+.emergency-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.emergency-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.emergency-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.emergency-box li{
+    list-style:none;
+    background:#f2f2ff;
+    margin-top:10px;
+    padding:10px;
+    border-radius:8px;
+}
+.emotion-box{
+    width:600px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+.emotion-box button{
+    margin:10px;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:purple;
+    color:white;
+    cursor:pointer;
+}
+
+.emotion-box button:hover{
+    transform:scale(1.05);
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2ff;
+    border-radius:10px;
+}
+.game-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.game-box button{
+    padding:12px 20px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.game-box input{
+    width:80%;
+    padding:12px;
+    margin-top:10px;
+}
+
+#numberBox{
+    color:purple;
+    margin-bottom:20px;
+}
+.family-box{
+    width:700px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.family-box input,
+.family-box textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.family-box textarea{
+    height:120px;
+}
+
+.family-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.message-card{
+    background:#f2f2ff;
+    padding:15px;
+    margin-top:15px;
+    border-radius:10px;
+}
+
+.message-card h4{
+    color:purple;
+    margin-top:10px;
+}
+.score-box{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.score-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+#scoreResult{
+    margin-top:20px;
+    text-align:center;
+    background:#f2f2ff;
+    padding:15px;
+    border-radius:10px;
+}
+.passport-box{
+    width:550px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.passport-box input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.passport-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#passport{
+    margin-top:20px;
+    padding:20px;
+    background:#f2f2ff;
+    border-radius:12px;
+}
+
+#passport h2{
+    color:purple;
+    text-align:center;
+    margin-bottom:15px;
+}
+.games-box{
+    width:700px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.games-box h2{
+    margin-top:20px;
+    color:purple;
+}
+
+.games-box input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.games-box button{
+    padding:12px 20px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.games-box hr{
+    margin:30px 0;
+}
+.about-page,
+.services-page{
+    padding:50px;
+}
+
+.about-content{
+    max-width:1000px;
+    margin:auto;
+}
+
+.about-content h2{
+    color:purple;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.about-content p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.features{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.feature-card{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+.services-grid{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.service-card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px gray;
+}
+
+.service-card:hover,
+.feature-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+.contact-page{
+    padding:50px;
+}
+
+.contact-text{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.contact-info,
+.contact-form{
+    width:400px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.contact-info h2{
+    color:purple;
+    margin-top:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.contact-form textarea{
+    height:120px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.feedback-box{
+    width:600px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.feedback-box input,
+.feedback-box textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.feedback-box textarea{
+    height:150px;
+}
+
+.feedback-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#result{
+    margin-top:15px;
+    text-align:center;
+    font-weight:bold;
+}
+#rating{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.review-card{
+    background:#f5f5ff;
+    padding:15px;
+    margin-top:10px;
+    border-radius:10px;
+}
+.welcome-box{
+    text-align:center;
+    background:linear-gradient(135deg,#7b2cbf,#9d4edd);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.welcome-box h1{
+    margin-bottom:10px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.stat-box{
+    width:180px;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.stat-box h2{
+    color:purple;
+    font-size:30px;
+}
+.dash-card{
+    transition:0.3s;
+}
+
+.dash-card:hover{
+    transform:translateY(-8px);
+}
+.quote{
+    margin-top:15px;
+    font-style:italic;
+}
+.section-heading{
+    text-align:center;
+    color:purple;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+/* Saved Data Cards */
+
+.saved-list {
+    margin-top: 20px;
+}
+
+.saved-card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid purple;
+}
+
+.saved-card h3 {
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.saved-card p {
+    margin: 5px 0;
+    color: #444;
+}
+h2 {
+    text-align: center;
+    color: purple;
+    margin-top: 30px;
+}
+.message-box{
+    background:#f3e8ff;
+    color:purple;
+    padding:12px;
+    margin:15px 0;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+}
+.stats-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin:30px;
+}
+
+.stat-card{
+    width:200px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-left:5px solid purple;
+}
+
+.stat-card h3{
+    color:purple;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    font-size:28px;
+    font-weight:bold;
+}
+.logout-btn{
+    background:red;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:8px;
+    float:right;
+    margin:10px;
+}
+
+.logout-btn:hover{
+    opacity:0.8;
+}
+.welcome-card{
+    width:80%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:15px;
+    background:#f3e8ff;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.welcome-card h2{
+    color:#7b2cbf;
+    margin-bottom:10px;
+}
+
+.welcome-card p{
+    color:#555;
+}
+.download-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 20px;
+    background:linear-gradient(135deg,#7b2cbf,#9d4edd);
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(123,44,191,0.3);
+}
+
+.download-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(123,44,191,0.5);
+}
+
+.download-btn:active{
+    transform:scale(0.98);
+}
+.passport-card{
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    border-left:5px solid #9d4edd;
+}
+
+.passport-card h3{
+    color:#7b2cbf;
+    margin-bottom:10px;
+}
+
+.passport-card p{
+    margin:8px 0;
+    color:#444;
+}

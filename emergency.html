@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Contacts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">Emergency Contacts</h1>
+
+<form method="POST" action="/emergency" class="emergency-box">
+
+    <input type="text"
+           name="name"
+           placeholder="Contact Name"
+           required>
+
+    <input type="text"
+           name="relation"
+           placeholder="Relationship"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Phone Number"
+           required>
+
+    <button type="submit">
+        Add Contact
+    </button>
+
+</form>
+
+<h2>Saved Contacts</h2>
+
+<div class="saved-list">
+{% for contact in contacts %}
+<div class="saved-card">
+
+    <h3>📞 {{ contact[1] }}</h3>
+
+    <p>👨‍👩‍👧 Relation: {{ contact[2] }}</p>
+    <p>📱 Phone: {{ contact[3] }}</p>
+
+</div>
+{% endfor %}
+</div>
+<!--script src="{{ url_for('static', filename='js/emergency.js') }}"></script>
+
+</body>
+</html>

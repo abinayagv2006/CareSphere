@@ -1,0 +1,36 @@
+.register-box{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.register-box h1{
+    text-align:center;
+    color:purple;
+    margin-bottom:20px;
+}
+
+.register-box input,
+.register-box select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.register-box button{
+    width:100%;
+    padding:12px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.register-box p{
+    text-align:center;
+    margin-top:15px;
+}

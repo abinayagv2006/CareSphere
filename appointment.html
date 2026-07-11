@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">Appointment Booking</h1>
+
+<div class="appointment-box">
+
+    <input type="text"
+    id="patient"
+    placeholder="Patient Name">
+
+    <input type="text"
+    id="doctor"
+    placeholder="Doctor Name">
+
+    <input type="date"
+    id="date">
+
+    <input type="time"
+    id="time">
+
+    <button onclick="bookAppointment()">
+        Book Appointment
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/appointment.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotional Wellness Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1 class="title">😊 Emotional Wellness Hub</h1>
+
+<div class="emotion-box">
+
+    <h2>How are you feeling today?</h2>
+
+    <button onclick="showMood('Excellent 😁')">😁 Excellent</button>
+
+    <button onclick="showMood('Happy 😊')">😊 Happy</button>
+
+    <button onclick="showMood('Normal 😐')">😐 Normal</button>
+
+    <button onclick="showMood('Sad 😔')">😔 Sad</button>
+
+    <button onclick="showMood('Stressed 😫')">😫 Stressed</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/emotional.js') }}"></script>
+
+</body>
+</html>
